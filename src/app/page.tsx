@@ -35,7 +35,7 @@ export default function Home() {
             <p>แด่คนที่คอยดูแลและเป็นห่วงหนูเสมอ</p>
             <Dialog>
               <DialogTrigger asChild>
-                <button className="rounded-full bg-white px-6 py-2 font-semibold text-warm-pink transition-all hover:bg-[#3DD9B3] hover:text-white">
+                <button className="rounded-full bg-white px-6 py-2 font-semibold text-warm-pink transition-all hover:bg-[#3DD9B3] hover:text-white active:bg-[#3DD9B3] active:text-white">
                   more
                 </button>
               </DialogTrigger>
@@ -126,7 +126,7 @@ export default function Home() {
           />
         </div>
         <Link href="/home">
-          <button className="rounded-full bg-bright-blue px-10 py-4 font-semibold text-white transition-all hover:bg-white hover:text-bright-blue hover:border hover:border-bright-blue">
+          <button className="rounded-full bg-bright-blue px-10 py-4 font-semibold text-white transition-all hover:bg-white hover:text-bright-blue hover:border hover:border-bright-blue active:bg-white active:text-bright-blue active:border active:border-bright-blue">
             Go !
           </button>
         </Link>
