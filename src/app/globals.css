@@ -7,6 +7,8 @@
 :root {
   --warm-pink: #fa7275;
   --bright-blue: #56B8FF;
+  --muted: 229 12% 86%; /* #d4d4d8 */
+  --muted-foreground: 229 10% 37%; /* #52525b */
   --font-popping: 'Poppins', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -47,6 +49,8 @@
   --color-foreground: var(--foreground);
   --color-warm-pink: var(--warm-pink);
   --color-bright-blue: var(--bright-blue);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --font-popping: var(--font-popping);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
