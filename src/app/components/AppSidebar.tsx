@@ -17,6 +17,7 @@ import { usePathname } from "next/navigation";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import MomAvatar from "/public/momavatar.jpg";
 import DadAvatar from "/public/dadavatar.jpg";
+import TimerAvatar from "/public/timeravatar.jpg";
 
 const menuitems = [
   {
@@ -40,17 +41,17 @@ const familyMembers = {
     "/gallory/dada": {
       name: "Dad",
     nickname: "พ่อเก่ง เก่งที่สุดในโลก",
-      avatar: DadAvatar.src
+      avatar: DadAvatar
     },
     "/gallory/mama": {
       name: "Mommy",
       nickname: "รัชชี่ คนที่เป็นห่วงหนูที่สุด",
-      avatar: MomAvatar.src
+      avatar: MomAvatar
     },
     "/gallory/bro": {
       name: "Timer",
       nickname: "เม่อร์ พี่ชายที่รักหนูมากที่สุด",
-      avatar: "/brother-avatar.png"
+      avatar: TimerAvatar
     },
   };
 
@@ -99,7 +100,7 @@ export default function AppSidebar() {
             {pathname?.startsWith("/gallory/") && currentFamilyMember && (
             <div className="flex items-center gap-4 p-4 bg-warm-pink/10 rounded-2xl">
               <Avatar className="h-12 w-12 items-center">
-                <AvatarImage src={currentFamilyMember.avatar} className="object-cover w-full h-full" />
+                <AvatarImage src={currentFamilyMember.avatar.src} className="object-cover w-full h-full" />
                 <AvatarFallback>{currentFamilyMember.name[0]}</AvatarFallback>
               </Avatar>
               <div className="flex flex-col gap-y-1">
