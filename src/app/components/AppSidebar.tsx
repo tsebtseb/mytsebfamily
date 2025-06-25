@@ -27,7 +27,7 @@ const menuitems = [
   },
   {
     title: "My Family",
-    url: "/gallory",
+    url: "/gallery",
     icon: FolderHeart,
   },
   {
@@ -38,17 +38,17 @@ const menuitems = [
 ];
 
 const familyMembers = {
-    "/gallory/dada": {
+    "/gallery/dada": {
       name: "Dad",
     nickname: "พ่อเก่ง เก่งที่สุดในโลก",
       avatar: DadAvatar
     },
-    "/gallory/mama": {
+    "/gallery/mama": {
       name: "Mommy",
       nickname: "รัชชี่ คนที่เป็นห่วงหนูที่สุด",
       avatar: MomAvatar
     },
-    "/gallory/bro": {
+    "/gallery/bro": {
       name: "Timer",
       nickname: "เม่อร์ พี่ชายที่รักหนูมากที่สุด",
       avatar: TimerAvatar
@@ -98,7 +98,7 @@ export default function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
         <SidebarFooter className="p-2">
-            {pathname?.startsWith("/gallory/") && currentFamilyMember && (
+            {pathname?.startsWith("/gallery/") && currentFamilyMember && (
             <div className="flex items-center gap-4 p-4 bg-warm-pink/10 rounded-2xl">
               <Avatar className="h-12 w-12 items-center">
                 <AvatarImage src={currentFamilyMember.avatar.src} className="object-cover w-full h-full" />

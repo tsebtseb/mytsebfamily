@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "My Family",
   description: "Best's Family Website",
   icons: {
-    icon: ["favicon.ico?v=4"],
+    icon: ["favicon.ico?v=4"],    
   },
 };
 
