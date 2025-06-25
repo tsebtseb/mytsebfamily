@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { glData } from "@/lib/familydata";
+import { glData } from "@/lib/gldata";
 
 export default function FamilyListAdd(){
     return (

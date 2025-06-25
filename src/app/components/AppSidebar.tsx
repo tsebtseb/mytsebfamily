@@ -97,7 +97,7 @@ export default function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        <SidebarFooter className="p-4">
+        <SidebarFooter className="p-2">
             {pathname?.startsWith("/gallory/") && currentFamilyMember && (
             <div className="flex items-center gap-4 p-4 bg-warm-pink/10 rounded-2xl">
               <Avatar className="h-12 w-12 items-center">
