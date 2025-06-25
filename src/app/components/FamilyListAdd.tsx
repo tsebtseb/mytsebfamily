@@ -1,20 +1,51 @@
 import Image from "next/image";
 import { glData } from "@/lib/gldata";
 
-export default function FamilyListAdd(){
-    return (
-        <div>
-             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-6">
+export default function FamilyListAdd() {
+  return (
+    <div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-6">
+
+
+        {/* special folder */}
+        <div
+          className="relative h-50 group"
+          //   onClick={() => handleOpenModal(item)}
+        >
+          <Image
+            src="/bestfolder.png"
+            alt=""
+            width={600}
+            height={400}
+            className="rounded-sm absolute w-full h-full object-contain"
+          />
+          <div className="h-60 relative z-10 w-full transform transition duration-500 group-hover:scale-125 opacity-0 group-hover:opacity-100 group-active:scale-125 group-active:opacity-100">
+            {/* if hover-overlay to overlap image */}
+            <Image
+              src="/bestfolder.png"
+              alt=""
+              fill
+              className="absolute w-full h-full -z-10 rounded-lg object-contain"
+            />
+            <div className="absolute left-0 right-0 flex items-center justify-center">
+              <div className="rounded-3xl p-2  bg-warm-pink/80">
+              <h3 className="text-white font-bold">Special!</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* list Item */}
         {glData.map((item) => {
-        //   const categoryStyle = categoryColors[item.category.toLowerCase()] || {
-        //     borderColor: "border-[#00cbc3]",
-        //     textColor: "text-[#00cbc3]",
-        //   };
+          //   const categoryStyle = categoryColors[item.category.toLowerCase()] || {
+          //     borderColor: "border-[#00cbc3]",
+          //     textColor: "text-[#00cbc3]",
+          //   };
           return (
             <div
               key={item.id}
               className="relative h-50 group"
-            //   onClick={() => handleOpenModal(item)}
+              //   onClick={() => handleOpenModal(item)}
             >
               <Image
                 src={item.imageString}
@@ -31,7 +62,7 @@ export default function FamilyListAdd(){
                   {item.category}
                 </button>
               </div>
-              <div className="h-60 relative z-10 w-full transform transition duration-500 group-hover:scale-125 opacity-0 group-hover:opacity-100">
+              <div className="h-60 relative z-10 w-full transform transition duration-500 group-hover:scale-125 opacity-0 group-hover:opacity-100 group-active:scale-125 group-active:opacity-100">
                 {/* if hover-overlay to overlap image */}
                 <Image
                   src={item.imageString}
@@ -43,7 +74,7 @@ export default function FamilyListAdd(){
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-zinc-600/90 to-transparent">
                   <h3 className="text-white font-bold">{item.title}</h3>
                   <button
-                    // className={`border ${categoryStyle.borderColor} ${categoryStyle.textColor} rounded-3xl text-sm px-2`}
+                  // className={`border ${categoryStyle.borderColor} ${categoryStyle.textColor} rounded-3xl text-sm px-2`}
                   >
                     {item.category}
                   </button>
@@ -52,7 +83,7 @@ export default function FamilyListAdd(){
             </div>
           );
         })}
-        </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 }

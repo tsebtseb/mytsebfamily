@@ -38,7 +38,7 @@ const galleryMenu: galleryMenuProps[] = [
   {
     name: "Bestเอง",
     href: "/gallery/tseb",
-    imageref: "/",
+    imageref: "/bestavatar.jpg",
     description: "c;ksdkv;kf",
     folderref: "/bestfolder.png",
   },
