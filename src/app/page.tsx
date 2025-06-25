@@ -18,7 +18,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col md:flex-row lg:flex-row">
+    <div className="flex min-h-screen flex-col md:flex-row lg:flex-row bg-white">
       <section className="bg-warm-pink p-4  w-full md:w-1/2 items-center justify-center lg:flex xl:w-2/5 md:m-2 lg:m-4 md:rounded-3xl lg:rounded-3xl">
         <div className="flex max-h-[800px] max-w-[430px] flex-col justify-center space-y-10">
           <Image

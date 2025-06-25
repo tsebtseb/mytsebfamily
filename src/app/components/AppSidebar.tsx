@@ -59,6 +59,7 @@ export default function AppSidebar() {
   const pathname = usePathname();
   const currentFamilyMember = familyMembers[pathname as keyof typeof familyMembers];
   return (
+    <div className="z-20">
     <Sidebar>
       <SidebarContent className="flex h-full flex-col justify-between">
         <SidebarGroup>
@@ -112,5 +113,6 @@ export default function AppSidebar() {
         </SidebarFooter>
       </SidebarContent>
     </Sidebar>
+    </div>
   );
 }
