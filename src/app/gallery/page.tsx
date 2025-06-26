@@ -70,7 +70,7 @@ export default function Gallery() {
               isGridView? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2" : "flex flex-col gap-4"}`}>
               {galleryMenu.map((item, index) => (
                 <Link href={galleryMenu[index].href} key={index}>
-                  {isGridView? (<div className="bg-white border border-zinc-100 rounded-lg shadow-lg p-4 flex flex-col">
+                  {isGridView? (<div className="bg-white border border-zinc-100 rounded-lg shadow-lg p-4 flex flex-col hover:bg-zinc-50 active:bg-zinc-50 transition-colors">
                     <div className="flex flex-row justify-between">
                       <div className="w-20 h-20 overflow-hidden rounded-full border border-zinc-200/50">
                         <Image
@@ -86,7 +86,7 @@ export default function Gallery() {
                       <h2 className="text-lg font-semibold">{galleryMenu[index].name}</h2>
                       <p className="text-muted-foreground">{galleryMenu[index].description}</p>
                     </div>
-                  </div>) :(<div className="flex flex-row items-center justify-between py-4 px-2 hover:bg-zinc-50 transition-colors">
+                  </div>) :(<div className="flex flex-row items-center justify-between py-4 px-2 hover:bg-zinc-50  active:bg-zinc-50 transition-colors">
                       <div className="flex items-center gap-4">
                         <div className="w-10 h-10">
                           <Image

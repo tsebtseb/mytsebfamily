@@ -22,7 +22,6 @@ const links: linkProps[] = [
   { name: "Dad", href: "/home/dad" },
   { name: "Mom", href: "/home/mom" },
   { name: "Timer", href: "/home/timer" },
-  { name: "Best", href: "/home/tseb" },
 ];
 
 export default function HomeNavbar() {
