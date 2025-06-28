@@ -1,5 +1,5 @@
 "use client";
-import { Folder, ChevronRight,LogOut, ChevronLeft } from "lucide-react";
+import { Folder, ChevronRight,Lock, ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import FamilyListAdd from "@/app/components/FamilyListAdd";
 import { useAuth } from "@/context/userContext";
@@ -35,8 +35,8 @@ export default function Gallery() {
              className="flex flex-row items-center gap-2 shadow-md hover:shadow-lg transition-all px-6 py-5 text-md"
              onClick={()=>logout(pathname)}
             >
-              <LogOut size={22} />
-              <h1 className="font-popping ">Log Out</h1>
+                <Lock size={22} />
+                <h1 className="font-popping ">Lock</h1>
             </Button>
 
             <Button

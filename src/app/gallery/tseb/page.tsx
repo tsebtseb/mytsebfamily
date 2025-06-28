@@ -1,5 +1,5 @@
 "use client";
-import { Folder, ChevronRight,LogOut, ChevronLeft } from "lucide-react";
+import { Folder, ChevronRight, Lock, ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import FamilyListAdd from "@/app/components/FamilyListAdd";
 import { useAuth } from "@/context/userContext";
@@ -8,10 +8,10 @@ import { usePathname, useRouter } from "next/navigation";
 // import Image from "next/image";
 
 export default function Gallery() {
-  const {logout}=useAuth()
+  const { logout } = useAuth();
   const pathname = usePathname();
-  const router=useRouter();
-  
+  const router = useRouter();
+
   return (
     <div className="w-full h-full flex flex-col p-5">
       <div className="flex items-center gap-x-2 mb-6 px-4">
@@ -32,16 +32,16 @@ export default function Gallery() {
           <div className="flex flex-row items-center justify-end mt-8 gap-x-4">
             <Button
               variant="outline"
-             className="flex flex-row items-center gap-2 shadow-md hover:shadow-lg transition-all px-6 py-5 text-md"
-             onClick={()=>logout(pathname)}
+              className="flex flex-row items-center gap-2 shadow-md hover:shadow-lg transition-all px-6 py-5 text-md"
+              onClick={() => logout(pathname)}
             >
-              <LogOut size={22} />
-              <h1 className="font-popping ">Log Out</h1>
+              <Lock size={22} />
+              <h1 className="font-popping ">Lock</h1>
             </Button>
 
             <Button
-             className="flex flex-row items-center gap-2 shadow-md hover:shadow-lg transition-all px-6 py-5 text-md"
-             onClick={()=>router.back()}
+              className="flex flex-row items-center gap-2 shadow-md hover:shadow-lg transition-all px-6 py-5 text-md"
+              onClick={() => router.back()}
             >
               <ChevronLeft size={22} />
               <h1 className="font-popping">Back</h1>
