@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <Link href="/home">
           <button className="rounded-full bg-bright-blue px-10 py-4 font-semibold text-white transition-all hover:bg-white hover:text-bright-blue hover:border hover:border-bright-blue active:bg-white active:text-bright-blue active:border active:border-bright-blue">
-            Let's Go!
+            Let&apos;s Go!
           </button>
         </Link>
       </section>
