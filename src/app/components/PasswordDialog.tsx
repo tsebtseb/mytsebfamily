@@ -70,6 +70,7 @@ export function PasswordDialog({
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className={error ? "border-red-500" : ""}
+            autoFocus
           />
           {error && (
             <div className="flex lex-row justify-between flex-wrap">
