@@ -14,6 +14,18 @@ export interface FamilyList {
     link?: FamilyLink[];
   }
 
+  export interface SpecialList {
+    id: number;
+    title: string;
+    for:  "daddy" | "mommy" | "timer" ;
+    date?: string;
+    description: string;
+    imageString: string;
+    folderRef: string;
+    imgRef?: string[];
+    link?: FamilyLink[];
+  }
+
 export const familyData: FamilyList[] = [
     {
         id: 0,
@@ -175,6 +187,43 @@ export const tsebData: FamilyList[] = [
     for: "best",
     description: "Short description",
     imageString: "/mompic.jpg",
+  },
+  // ...more items
+];
+
+
+export const daddySpecial: SpecialList[] = [
+  {
+    id: 0,
+    title: "ถึง พ่อ:",
+    for: "daddy",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+    folderRef: "/dadfile.png"
+  },
+  // ...more items
+];
+
+export const mommySpecial: SpecialList[] = [
+  {
+    id: 0,
+    title: "ถึง แม่:",
+    for: "daddy",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+    folderRef: "/momfile.png",
+  },
+  // ...more items
+];
+
+export const timerSpecial: SpecialList[] = [
+  {
+    id: 0,
+    title: "To Timer:",
+    for: "daddy",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+     folderRef: "/timerfile.png"
   },
   // ...more items
 ];

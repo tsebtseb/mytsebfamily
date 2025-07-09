@@ -1,7 +1,7 @@
 "use client";
 import { Folder, ChevronRight, ChevronLeft } from "lucide-react";
 import Link from "next/link";
-import GalleryListAdd from "@/app/components/GalleryListAdd";
+import SpecialListAdd from "@/app/components/SpecialListAdd";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
@@ -26,7 +26,7 @@ export default function Gallery() {
       <div className="w-full max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="p-5 lg:p-0">
           <h1 className="text-4xl font-bold">Timer</h1>
-          <GalleryListAdd />
+          <SpecialListAdd />
           <div className="p-6 h-full w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2"></div>
           </div>

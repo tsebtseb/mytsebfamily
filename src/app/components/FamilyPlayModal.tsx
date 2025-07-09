@@ -22,7 +22,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export type FamilySource = "home" | "dada" | "mama" | "bro" | "tseb";
+export type FamilySource = "home" | "dada" | "mama" | "bro" | "tseb" |"dadsp"| "momsp"|"timersp";
 
 type familycardprops = FamilyList & {
   source: FamilySource;
