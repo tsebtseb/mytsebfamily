@@ -17,7 +17,7 @@ export default function FamilyVideo() {
         <h1 className="text-white text-2xl md:test-5xl lg:text-6xl font-bold">
           My Family
         </h1>
-        <p className="text-white text-lg mt-4 line-clamp-3">Lorem porem.</p>
+        <p className="text-white text-lg mt-4 line-clamp-3">ครอบครัวของหนู ขอบคุณที่เลี้ยงหนูมาอย่างดีค่ะ</p>
         <div className="flex gap-x-3 mt-3">
           <a href="https://youtu.be/Ecz4aCA36tk">
             <Button className="bg-white text-black px-6 py-5 hover:text-white hover:bg-warm-pink active:bg-warm-pink active:text-white">

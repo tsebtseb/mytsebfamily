@@ -24,7 +24,7 @@ export default function GinKhao() {
 
         <SpinCircle dataName="restaurantData" />
 
-        <h1 className="text-xl font-semibold">💖 Mommy's Pick!</h1>
+        <h1 className="text-xl font-semibold">💖 Mommy&apos;s Pick!</h1>
         <div className="lg:my-20 md:my-15 sm:my-4">
           <SpinCircle dataName="mamaOrderData" />
         </div>

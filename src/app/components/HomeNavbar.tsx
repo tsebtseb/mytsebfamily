@@ -22,6 +22,7 @@ const links: linkProps[] = [
   { name: "Dad", href: "/home/dad" },
   { name: "Mom", href: "/home/mom" },
   { name: "Timer", href: "/home/timer" },
+  { name: "Best", href: "/home/best" },
 ];
 
 export default function HomeNavbar() {
@@ -44,7 +45,7 @@ export default function HomeNavbar() {
                 <li>
                   <Link
                     href={link.href}
-                    className="text-white font-semibold underline text-xl"
+                    className={`${ pathname === "/home"?"text-white":"text-zinc-700"} font-semibold underline text-xl`}
                   >
                     {link.name}
                   </Link>
@@ -53,7 +54,7 @@ export default function HomeNavbar() {
                 <li>
                   <Link
                     href={link.href}
-                    className="text-gray-300 font-normal text-xl"
+                    className={`${ pathname === "/home"?"text-gray-300":"	text-zinc-400"} text-gray-300 font-normal text-xl`}
                   >
                     {link.name}
                   </Link>
