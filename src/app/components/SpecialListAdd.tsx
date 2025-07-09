@@ -40,7 +40,7 @@ export default function SpecialListAdd() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-6">
        
         {/* list Item */}
-        {currentData.map((item) => {
+        {currentData.map((item, index) => {
 
           const handleRead = () => {
             router.push(
@@ -51,6 +51,7 @@ export default function SpecialListAdd() {
            <div
                     className="relative h-50 group"
                     onClick={handleRead}
+                    key={index}
                   >
                     <Image
                       src={item.folderRef}
