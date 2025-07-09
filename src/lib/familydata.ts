@@ -130,3 +130,51 @@ export const familyData: FamilyList[] = [
     },
 
 ];
+
+//daddy dataset
+export const daddyData: FamilyList[] = [
+  {
+    id: 0,
+    title: "Daddy Graduation",
+    for: "daddy",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+  },
+  // ...more items
+];
+
+//mommy dataset
+export const mommyData: FamilyList[] = [
+  {
+    id: 0,
+    title: "Mommy Graduation",
+    for: "mommy",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+  },
+  // ...more items
+];
+
+//timer dataset
+export const timerData: FamilyList[] = [
+  {
+    id: 0,
+    title: "Timer Graduation",
+    for: "timer",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+  },
+  // ...more items
+];
+
+//tseb datset
+export const tsebData: FamilyList[] = [
+  {
+    id: 0,
+    title: "Mommy Graduation",
+    for: "best",
+    description: "Short description",
+    imageString: "/mompic.jpg",
+  },
+  // ...more items
+];

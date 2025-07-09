@@ -1,11 +1,10 @@
 "use client";
 import { Folder, ChevronRight,Lock, ChevronLeft } from "lucide-react";
 import Link from "next/link";
-import FamilyListAdd from "@/app/components/FamilyListAdd";
+import GalleryListAdd from "@/app/components/GalleryListAdd";
 import { useAuth } from "@/context/userContext";
 import { Button } from "@/components/ui/button";
 import { usePathname, useRouter } from "next/navigation";
-// import Image from "next/image";
 
 export default function Gallery() {
   const {logout}=useAuth()
@@ -25,7 +24,7 @@ export default function Gallery() {
       <div className="w-full max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="p-5 lg:p-0">
           <h1 className="text-4xl font-bold">Mom</h1>
-          <FamilyListAdd />
+          <GalleryListAdd />
           <div className="p-6 h-full w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2"></div>
           </div>

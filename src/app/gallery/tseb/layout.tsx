@@ -4,6 +4,8 @@ import { useAuth } from "@/context/userContext";
 import { PasswordDialog } from "@/app/components/PasswordDialog";
 import { usePathname } from "next/navigation";
 
+const protectedRoutes = ["/gallery/mama", "/gallery/dada", "/gallery/bro", "/gallery/tseb"];
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { isAuthenticated, login } = useAuth();
   const [showDialog, setShowDialog] = useState(false);
@@ -15,8 +17,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
     const checkAuth = () => {
       if (mounted) {
-        if (!isAuthenticated(pathname)) {
+        if (protectedRoutes.includes(pathname) && !isAuthenticated(pathname)) {
           setShowDialog(true);
+        } else {
+          setShowDialog(false);
         }
         setIsChecking(false);
       }
@@ -38,18 +42,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return null; // or a loading spinner
   }
 
-
   return (
     <>
-    <PasswordDialog 
-        isOpen={showDialog} 
-        onSuccess={handleSuccess} 
-        route={pathname} 
+      <PasswordDialog
+        isOpen={showDialog}
+        onSuccess={handleSuccess}
+        route={pathname}
       />
       <div className="flex w-full h-screen">
         <main className="flex-1">
           <section className="min-h-screen w-full">
-            {isAuthenticated(pathname)&&(<div className="main">{children}</div>)}
+            {(!protectedRoutes.includes(pathname) || isAuthenticated(pathname)) && (
+              <div className="main">{children}</div>
+            )}
           </section>
         </main>
       </div>

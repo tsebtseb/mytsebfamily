@@ -22,8 +22,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+export type FamilySource = "home" | "dada" | "mama" | "bro" | "tseb";
+
 type familycardprops = FamilyList & {
-  source: "home" | "gallery";
+  source: FamilySource;
   state: boolean;
   changeState: (newState: boolean) => void;
 };

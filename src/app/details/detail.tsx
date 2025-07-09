@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import HomeNavbar from "../components/HomeNavbar";
-import { familyData } from "@/lib/familydata";
+import { familyData, daddyData, mommyData, timerData, tsebData } from "@/lib/familydata";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import type { FamilyList } from "@/lib/familydata";
 
 const categoryColors: {
   [key: string]: { borderColor: string; textColor: string };
@@ -29,9 +30,24 @@ export default function Details() {
   const title = searchParams.get("title");
   const source = searchParams.get("source");
 
+
+  let selectedData: FamilyList[] = familyData;
+    if (source==="family") {
+        selectedData = familyData;
+    }else if (source==="dada") {
+        selectedData = daddyData;
+    } else if (source==="mama") {
+        selectedData = mommyData;
+    } else if (source==="bro") {
+        selectedData = timerData;
+    } else if (source==="tseb") {
+        selectedData = tsebData;
+    }
+  
+
   const item =
-    familyData.find((e) => e.id === id) ||
-    familyData.find((e) => e.title === title);
+    selectedData.find((e) => e.id === id) ||
+    selectedData.find((e) => e.title === title);
   if (!item)
     return (
       <div className="w-full min-h-screen flex items-center justify-center">
