@@ -50,7 +50,7 @@ const familyMembers = {
     },
     "/gallery/bro": {
       name: "Timer",
-      nickname: "เม่อร์ พี่ชายที่รักหนูมากที่สุด",
+      nickname: "ธามเม่อร์ แอนด์ สำลี",
       avatar: TimerAvatar
     },
   };

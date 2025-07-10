@@ -213,7 +213,18 @@ export const mommySpecial: SpecialList[] = [
     imageString: "/mompic.jpg",
     folderRef: "/momfile.png",
   },
-  // ...more items
+  {
+    id: 1,
+    title: "คุณยาย",
+    for: "daddy",
+    description: "\"สวัสดี นี่ยายน้อยเอง\" คุณย้ายคุณยาย \n\n{{video:https://drive.google.com/file/d/11gyx-cgns5QUQrrdeDusTvuOEmXPc5Bo/preview}}\n\n",
+    imageString: "/yaynoy.jpg",
+    imgRef: [
+      "/yaynoy.jpg",
+      "/yaynoy2.jpg",
+    ],
+    folderRef: "/momfile.png",
+  },
 ];
 
 export const timerSpecial: SpecialList[] = [

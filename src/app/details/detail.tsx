@@ -1,8 +1,14 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import HomeNavbar from "../components/HomeNavbar";
-import { familyData, daddyData, mommyData, timerData, tsebData } from "@/lib/familydata";
+import {
+  familyData,
+  daddyData,
+  mommyData,
+  timerData,
+  tsebData,
+} from "@/lib/familydata";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -29,21 +35,20 @@ export default function Details() {
   const id = Number(searchParams.get("id"));
   const title = searchParams.get("title");
   const source = searchParams.get("source");
-
+  const router = useRouter();
 
   let selectedData: FamilyList[] = familyData;
-    if (source==="family") {
-        selectedData = familyData;
-    }else if (source==="dada") {
-        selectedData = daddyData;
-    } else if (source==="mama") {
-        selectedData = mommyData;
-    } else if (source==="bro") {
-        selectedData = timerData;
-    } else if (source==="tseb") {
-        selectedData = tsebData;
-    }
-  
+  if (source === "home") {
+    selectedData = familyData;
+  } else if (source === "dada") {
+    selectedData = daddyData;
+  } else if (source === "mama") {
+    selectedData = mommyData;
+  } else if (source === "bro") {
+    selectedData = timerData;
+  } else if (source === "tseb") {
+    selectedData = tsebData;
+  }
 
   const item =
     selectedData.find((e) => e.id === id) ||
@@ -62,7 +67,30 @@ export default function Details() {
 
   return (
     <div>
-      {source === "home" && <HomeNavbar />}
+      {source === "home" ? (
+        <HomeNavbar />
+      ) : (
+        <div className="flex items-center p-4">
+          <button
+            onClick={() => router.back()}
+            className="flex items-center gap-2 text-lg font-medium text-zinc-700 hover:text-zinc-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12.707 14.707a1 1 0 01-1.414 0L7 10.414a1 1 0 010-1.414l4.293-4.293a1 1 0 111.414 1.414L9.414 10l3.293 3.293a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Back
+          </button>
+        </div>
+      )}
       <div className="w-full max-w-7xl mx-auto sm:px-6 lg:px-8 overflow-y-auto">
         <div className="flex-col p-5 lg:p-0 mt-2">
           <h1 className="text-3xl font-bold">{item.title}</h1>
@@ -167,16 +195,16 @@ export default function Details() {
             {Array.isArray(item.link) && item.link.length > 0 ? (
               <div className="flex flex-col my-4">
                 <ul className="list-disc pl-5">
-                {item.link.map((item, index) => (
-                <li key={index}>
-                 <a
-                 href={item.reflink}
-                 className="font-semibold underline text-zinc-700 hover:text-zinc-400"
-               >
-                 {item.label}
-               </a>
-               </li>
-                ))}
+                  {item.link.map((item, index) => (
+                    <li key={index}>
+                      <a
+                        href={item.reflink}
+                        className="font-semibold underline text-zinc-700 hover:text-zinc-400"
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             ) : null}
