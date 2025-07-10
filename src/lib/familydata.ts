@@ -30,7 +30,7 @@ export const familyData: FamilyList[] = [
     {
         id: 0,
         title: "Best's graduation",
-        for: "family",
+        for: "best",
         date:"3 Oct 2024" ,
         description:"",
         imageString: "/bestbg.jpg",
@@ -51,7 +51,7 @@ export const familyData: FamilyList[] = [
     {
       id: 1,
       title: "งานบวชหลวงพี่ภาสวิชฺโช",
-      for: "family",
+      for: "timer",
       date:"6 July 2024",
       description:"",
       imageString: "/family/05_งานบวชหลวงพี่.JPG",
@@ -69,7 +69,7 @@ export const familyData: FamilyList[] = [
   {
     id: 2,
     title: "Timer's graduation",
-    for: "family",
+    for: "timer",
     description:"",
     imageString: "/family/10_ปรญเม่อ.JPG",
     imgRef: [
@@ -232,10 +232,10 @@ export const mommyData: FamilyList[] = [
           title: "วันรับชุดครุยเบซซ์",
           for: "mommy",
           description: "",
-          imageString: "/formom/10grad.jpg",
+          imageString: "/formom/10grad.JPG",
           imgRef: [
-            "/formom/10grad.jpg",
-            "/formom/09gard.jpg",
+            "/formom/10grad.JPG",
+            "/formom/09gard.JPG",
             ],
         },
         {
@@ -255,10 +255,10 @@ export const mommyData: FamilyList[] = [
           title: "R&B",
           for: "mommy",
           description: "",
-          imageString: "/formom/13cutet.jpg",
+          imageString: "/formom/13cutet.JPG",
           imgRef: [
-            "/formom/13cutet.jpg",
-            "/formom/14cutet.jpg",
+            "/formom/13cutet.JPG",
+            "/formom/14cutet.JPG",
             ],
         },
         {
@@ -266,12 +266,12 @@ export const mommyData: FamilyList[] = [
           title: "ทำงานวันแรก AOT",
           for: "mommy",
           description: "",
-          imageString: "/formom/15work.jpg",
+          imageString: "/formom/15work.JPG",
           imgRef: [
-            "/formom/15work.jpg",
-            "/formom/16work.jpg",
-            "/formom/17work.jpg",
-            "/formom/18work.jpg",
+            "/formom/15work.JPG",
+            "/formom/16work.JPG",
+            "/formom/17work.JPG",
+            "/formom/18work.JPG",
             ],
         },
         {
@@ -279,17 +279,17 @@ export const mommyData: FamilyList[] = [
           title: "Video Call from SG",
           for: "mommy",
           description: "",
-          imageString: "/formom/19SG.jpg",
+          imageString: "/formom/19SG.JPG",
         },
         {
           id: 10,
           title: "อาหารฝีมือแม่",
           for: "mommy",
           description: "",
-          imageString: "/formom/21food.jpg",
+          imageString: "/formom/21food.JPG",
           imgRef: [
-           "/formom/21food.jpg",
-           "/formom/20food.jpg",
+           "/formom/21food.JPG",
+           "/formom/20food.JPG",
             ],
         },
         {
@@ -298,7 +298,7 @@ export const mommyData: FamilyList[] = [
           for: "mommy",
           description: "",
           // description: "กลับมาสุวรรณภูมิดพื่อไปสุวรรณภูมิใหม่",
-          imageString: "/formom/23airport.jpg",
+          imageString: "/formom/23airport.JPG",
         },
         {
           id: 12,
@@ -306,11 +306,11 @@ export const mommyData: FamilyList[] = [
           for: "mommy",
           description: " จริงๆก็อยู่คนเดียวได้ เที่ยวคนเดียวได้ กินข้าวคนเดียวได้ แต่แพงจังมากับแม่ดีกว่า(หยอกๆนะคะ) \n\nขอบคุณแม่ที่พาไปเที่ยวที่ญี่ปุ่นนะคะ \n\n{{video:https://drive.google.com/file/d/1IBsnbydptg7dC08S0lkVM1IeAzICpO88/preview}}\n\n",
           //ขอโทษที่เป็นไกด์ที่ไาเหนื่อยไปหน่อยนะคะ
-          imageString: "/formom/24solotrip.jpg",
+          imageString: "/formom/24solotrip.JPG",
           imgRef: [
-           "/formom/24solotrip.jpg",
-           "/formom/25solotrip.jpg",
-           "/formom/28solotrip.jpg",
+           "/formom/24solotrip.JPG",
+           "/formom/25solotrip.JPG",
+           "/formom/28solotrip.JPG",
             ],
         },
 ];
@@ -333,11 +333,11 @@ export const timerData: FamilyList[] = [
     title: "วิชานินจา",
     for: "timer",
     description: "Piggyback! วิชานินจาตัวเบา w/ my bro ไม่ค่อยจะเบียวกันเลย",
-    imageString: "/former/02back.jpg",
+    imageString: "/former/02back.JPG",
     imgRef: [
-      "/former/02back.jpg",
-      "/former/03back.jpg",
-      "/former/04back.jpg",
+      "/former/02back.JPG",
+      "/former/03back.JPG",
+      "/former/04back.JPG",
     ],
   },
   {
@@ -345,7 +345,7 @@ export const timerData: FamilyList[] = [
     title: "Food",
     for: "timer",
     description: "",
-    imageString: "/former/05food.jpeg",
+    imageString: "/former/05food.JPEG",
   },
   {
     id: 3,
@@ -377,11 +377,11 @@ export const timerData: FamilyList[] = [
     title: "บรึ๋นนน",
     for: "timer",
     description: "",
-    imageString: "/former/10wah.jpg",
+    imageString: "/former/10wah.JPG",
     imgRef: [
-    "/former/10wah.jpg",
-    "/former/11wah.jpg",
-    "/former/12wah.jpg",
+    "/former/10wah.JPG",
+    "/former/11wah.JPG",
+    "/former/12wah.JPG",
     ],
   },
   {
@@ -389,11 +389,11 @@ export const timerData: FamilyList[] = [
     title: "my bro",
     for: "timer",
     description: "",
-    imageString: "/former/13close.jpg",
+    imageString: "/former/13close.JPG",
     imgRef: [
-    "/former/13close.jpg",
-    "/former/14close.jpg",
-    "/former/15close.jpg",
+    "/former/13close.JPG",
+    "/former/14close.JPG",
+    "/former/15close.JPG",
     ],
   },
   {
@@ -401,11 +401,11 @@ export const timerData: FamilyList[] = [
     title: "eiei",
     for: "timer",
     description: "",
-    imageString: "/former/18dd.jpg",
+    imageString: "/former/18dd.JPG",
     imgRef: [
-    "/former/18dd.jpg",
-    "/former/17dd.jpg",
-    "/former/19dd.jpg",
+    "/former/18dd.JPG",
+    "/former/17dd.JPG",
+    "/former/19dd.JPG",
     ],
   },
   {
@@ -413,10 +413,10 @@ export const timerData: FamilyList[] = [
     title: "hmmm",
     for: "timer",
     description: "",
-    imageString: "/former/20eiei.jpg",
+    imageString: "/former/20eiei.JPG",
     imgRef: [
-   "/former/20eiei.jpg",
-   "/former/21eiei.jpg",
+   "/former/20eiei.JPG",
+   "/former/21eiei.JPG",
     ],
   },
   {
@@ -424,14 +424,14 @@ export const timerData: FamilyList[] = [
     title: "Thx mu bro",
     for: "timer",
     description: "",
-    imageString: "/former/22apple.jpg",
+    imageString: "/former/22apple.JPG",
   },
   {
     id: 11,
     title: "คร่อก",
     for: "timer",
     description: "",
-    imageString: "/former/23lean.jpg",
+    imageString: "/former/23lean.JPG",
   },
   
 ];
@@ -495,7 +495,7 @@ export const daddySpecial: SpecialList[] = [
     title: "ถึง พ่อ",
     for: "daddy",
     description: "Short description",
-    imageString: "/mompic.jpg",
+    imageString: "/dadavatar.jpg",
     folderRef: "/dadfile.png"
   },
   {
@@ -522,7 +522,7 @@ export const mommySpecial: SpecialList[] = [
     title: "ถึง แม่",
     for: "daddy",
     description: "Short description",
-    imageString: "/mompic.jpg",
+    imageString: "/momavatar.jpg",
     folderRef: "/momfile.png",
   },
   {
@@ -549,7 +549,7 @@ export const timerSpecial: SpecialList[] = [
     title: "To Timer",
     for: "daddy",
     description: "Short description",
-    imageString: "/mompic.jpg",
+    imageString: "/timeravatar.jpg",
      folderRef: "/timerfile.png"
   },
   // ...more items
