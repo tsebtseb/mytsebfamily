@@ -1,7 +1,6 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import HomeNavbar from "../components/HomeNavbar";
 import { mommySpecial, daddySpecial, timerSpecial } from "@/lib/familydata";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";

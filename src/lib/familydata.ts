@@ -195,7 +195,7 @@ export const tsebData: FamilyList[] = [
 export const daddySpecial: SpecialList[] = [
   {
     id: 0,
-    title: "ถึง พ่อ:",
+    title: "ถึง พ่อ",
     for: "daddy",
     description: "Short description",
     imageString: "/mompic.jpg",
@@ -207,7 +207,7 @@ export const daddySpecial: SpecialList[] = [
 export const mommySpecial: SpecialList[] = [
   {
     id: 0,
-    title: "ถึง แม่:",
+    title: "ถึง แม่",
     for: "daddy",
     description: "Short description",
     imageString: "/mompic.jpg",
@@ -224,13 +224,17 @@ export const mommySpecial: SpecialList[] = [
       "/yaynoy2.jpg",
     ],
     folderRef: "/momfile.png",
+    link: [
+      { label: "ลิงก์1 (ก่อนตัดต่อ)", reflink: "https://drive.google.com/file/d/1DIgttXBKG-Jhun5Dkf6bAiSCNK_uFoWP/view?usp=sharing" },
+      { label: "ลิ้งค์2 ", reflink: "https://drive.google.com/file/d/11gyx-cgns5QUQrrdeDusTvuOEmXPc5Bo/view?usp=sharing" }
+    ]
   },
 ];
 
 export const timerSpecial: SpecialList[] = [
   {
     id: 0,
-    title: "To Timer:",
+    title: "To Timer",
     for: "daddy",
     description: "Short description",
     imageString: "/mompic.jpg",
