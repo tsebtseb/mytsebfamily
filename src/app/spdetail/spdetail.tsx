@@ -86,7 +86,7 @@ export default function SpDetails() {
                       <CarouselItem key={index}>
                         <div className="p-1">
                           <Card className="bg-transparent shadow-none border-none">
-                            <CardContent className="flex aspect-square  items-center justify-center p-1 overflow-hidden">
+                            <CardContent className="flex aspect-square  items-center justify-center p-1">
                               <Image
                                 src={item}
                                 alt=""
@@ -113,7 +113,7 @@ export default function SpDetails() {
                 </Carousel>
               </div>
             ) : (
-              <div className="relative max-w-[600px] max-h-[500px] overflow-hidden">
+              <div className="relative w-full max-w-[600px] mx-auto my-4">
                 <Image
                   src={item.imageString}
                   alt=""
@@ -125,7 +125,7 @@ export default function SpDetails() {
             )}
           </div>
           <div className="whitespace-pre-line my-4">
-            <h2 className="my-4 font-bold text-2xl">For you</h2>
+            {item.description!="" && (<h2 className="my-4 font-bold text-2xl">For you</h2>)}
             {item.description.split("\n").map((line, index) => {
               if (line.includes("{{video:")) {
                 const videoUrl = line.match(/{{video:(.*?)}}/)?.[1]; // Extract URL

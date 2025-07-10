@@ -22,7 +22,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export type FamilySource = "home" | "dada" | "mama" | "bro" | "tseb" |"dadsp"| "momsp"|"timersp";
+export type FamilySource =
+  | "home"
+  | "dada"
+  | "mama"
+  | "bro"
+  | "tseb"
+  | "dadsp"
+  | "momsp"
+  | "timersp";
 
 type familycardprops = FamilyList & {
   source: FamilySource;
@@ -114,35 +122,32 @@ export default function FamilyPlayModal({
                   </Carousel>
                 </div>
               ) : (
-                <div className="relative w-full flex justify-center">
-                  <div className="max-w-[400px] max-h-[300px] overflow-hidden my-2 ">
-                    <Image
-                      src={imageString}
-                      alt=""
-                      width={600}
-                      height={350}
-                      className="object-cover object-center"
-                    />
-                  </div>
+                <div className="relative w-full max-w-[400px] mx-auto my-4">
+                  <Image
+                    src={imageString}
+                    alt=""
+                    width={600}
+                    height={350}
+                    className="object-cover object-center"
+                  />
                 </div>
               )}
-
-{Array.isArray(link) && link.length > 0 ? (
-              <div className="flex flex-col my-4">
-                <ul className="list-disc pl-5">
-                  {link.map((item, index) => (
-                    <li key={index}>
-                      <a
-                        href={item.reflink}
-                        className="font-semibold underline text-zinc-700 hover:text-zinc-400"
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+              {Array.isArray(link) && link.length > 0 ? (
+                <div className="flex flex-col my-4">
+                  <ul className="list-disc pl-5">
+                    {link.map((item, index) => (
+                      <li key={index}>
+                        <a
+                          href={item.reflink}
+                          className="font-semibold underline text-zinc-700 hover:text-zinc-400"
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
 
               {description.split("\n").map((line, index) => {
                 if (line.includes("{{video:")) {
@@ -171,7 +176,6 @@ export default function FamilyPlayModal({
                 );
               })}
             </div>
- 
           </DialogHeader>
         </div>
         <div className="flex w-full justify-center items-center">
