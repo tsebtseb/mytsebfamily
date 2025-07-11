@@ -47,33 +47,31 @@ export default function SpecialListAdd() {
           };
           return (
             <div
-              className="relative h-50 group"
-              onClick={handleRead}
-              key={index}
-            >
+            className="group cursor-pointer flex flex-col"
+            onClick={handleRead}
+            key={index}
+          >
+            <div className="relative w-full aspect-[3/2] overflow-hidden rounded-md">
               <Image
                 src={item.folderRef}
                 alt=""
-                width={600}
-                height={400}
-                className="rounded-sm absolute w-full h-full object-contain"
+                fill
+                className="object-contain transition-transform duration-500 group-hover:scale-110"
               />
-
-              <div className="h-60 relative z-10 w-full transform transition duration-500 group-hover:scale-125 opacity-0 group-hover:opacity-100 group-active:scale-125 group-active:opacity-100">
-                {/* if hover-overlay to overlap image */}
-                <Image
-                  src={item.folderRef}
-                  alt=""
-                  fill
-                  className="absolute w-full h-full -z-10 rounded-lg object-contain"
-                />
+          
+              {/* small screen label */}
+              <div className="absolute bottom-0 left-0 right-0 flex justify-center block md:hidden pb-2">
+                <div className="rounded-3xl px-3 py-1 bg-warm-pink/80 backdrop-blur">
+                  <h3 className="text-white text-sm font-semibold text-center">{item.title}</h3>
+                </div>
               </div>
-
-              <div className="mt-2 text-center text-base font-semibold transition-colors duration-300 group-hover:text-warm-pink">
-                {item.title}
-              </div>
-              
             </div>
+          
+            {/* medium and up label */}
+            <div className="hidden md:block mt-2 text-center text-base font-semibold transition-colors duration-300 group-hover:text-warm-pink">
+              {item.title}
+            </div>
+          </div>
           );
         })}
       </div>
