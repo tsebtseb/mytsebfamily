@@ -840,6 +840,7 @@ export const mommyData: FamilyList[] = [
           id: 7,
           title: "R&B",
           for: "mommy",
+          date: "Jan 2025",
           description: "",
           imageString: "/formom/13cutet.JPG",
           imgRef: [

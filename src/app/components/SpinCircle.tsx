@@ -62,14 +62,14 @@ const mamaOrderData = [
 ];
 
 const dadPickData=[
-  { value: 30, color: "#333333", label: "🍛EASY! buddy" },
-  { value: 90, color: "#D7263D", label: "🐮Rengaya" },
-  { value: 70, color: "#EF476F", label: "🍜Khao-Sō-i" },
-  { value: 70, color: "#90BE6D", label: "🍜ThongSmith" },
+  { value: 50, color: "#333333", label: "🍛EASY! buddy" },
+  { value: 50, color: "#D7263D", label: "🐮Rengaya" },
+  { value: 50, color: "#EF476F", label: "🍜Khao-Sō-i" },
+  { value: 50, color: "#90BE6D", label: "🍜ThongSmith" },
   { value: 50, color: "#264653", label: "🍜ก๋วยเตี๋ยวเนื้อ" },
-  { value: 60, color: "#720026", label: "🥩พาข้าวเหนียว" },
-  { value: 80, color: "#43AA8B", label: "🍜รสดีเด็ด" },
-  { value: 60, color: "#FF6F59", label: "🍜ก๋วยเตี๋ยวต้มยำ" },
+  { value: 50, color: "#720026", label: "🥩พาข้าวเหนียว" },
+  { value: 50, color: "#43AA8B", label: "🍜รสดีเด็ด" },
+  { value: 50, color: "#FF6F59", label: "🍜ก๋วยเตี๋ยวต้มยำ" },
 ];
 
 export default function SpinCircle({
