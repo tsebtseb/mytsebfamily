@@ -43,12 +43,27 @@ const familyMembers = {
     nickname: "พ่อเก่ง เก่งที่สุดในโลก",
       avatar: DadAvatar
     },
+    "/gallery/dada/special": {
+      name: "Dad",
+    nickname: "พ่อเก่ง เก่งที่สุดในโลก",
+      avatar: DadAvatar
+    },
     "/gallery/mama": {
       name: "Mommy",
       nickname: "รัชชี่ คนที่เป็นห่วงหนูที่สุด",
       avatar: MomAvatar
     },
+    "/gallery/mama/special": {
+      name: "Mommy",
+      nickname: "รัชชี่ คนที่เป็นห่วงหนูที่สุด",
+      avatar: MomAvatar
+    },
     "/gallery/bro": {
+      name: "Timer",
+      nickname: "ธามเม่อร์ แอนด์ สำลี",
+      avatar: TimerAvatar
+    },
+    "/gallery/bro/special": {
       name: "Timer",
       nickname: "ธามเม่อร์ แอนด์ สำลี",
       avatar: TimerAvatar
