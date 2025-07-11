@@ -151,18 +151,19 @@ export default function FamilyPlayModal({
 
               {description.split("\n").map((line, index) => {
                 if (line.includes("{{video:")) {
-                  const videoUrl = line.match(/{{video:(.*?)}}/)?.[1]; // Extract URL
-                  return videoUrl ? (
-                    <iframe
-                      className="w-full aspect-video rounded-lg shadow-md my-1"
-                      key={index}
-                      height="245"
-                      src={videoUrl}
-                      title="YouTube video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  ) : null;
+                  // const videoUrl = line.match(/{{video:(.*?)}}/)?.[1]; // Extract URL=> in popup don't show video
+                  // return videoUrl ? (
+                  //   <iframe
+                  //     className="w-full aspect-video rounded-lg shadow-md my-1"
+                  //     key={index}
+                  //     height="245"
+                  //     src={videoUrl}
+                  //     title="YouTube video"
+                  //     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  //     allowFullScreen
+                  //   />
+                  // ) : null;
+                  return null;
                 }
                 return (
                   <p key={index} className="whitespace-pre-line">
