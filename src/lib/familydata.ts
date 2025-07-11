@@ -127,8 +127,8 @@ export const daddyData: FamilyList[] = [
     description:"by ดญ. ณัฐรดา ป.3/5",
     imageString: "/fordad/12ny.jpg",
     imgRef: [
-      "/formom/12ny.jpg",
-       "/formom/13ny.jpg",
+      "/fordad/12ny.jpg",
+       "/fordad/13ny.jpg",
      ],
   },
   {
@@ -279,7 +279,7 @@ export const mommyData: FamilyList[] = [
           title: "Video Call from SG",
           for: "mommy",
           description: "",
-          imageString: "/formom/19SG.JPG",
+          imageString: "/formom/19sg.JPG",
         },
         {
           id: 10,
@@ -325,7 +325,7 @@ export const timerData: FamilyList[] = [
     imageString: "/former/00fighting.jpg",
     imgRef: [
       "/former/00fighting.jpg",
-      "/former/01fighting.jpg",
+      "/former/01fighting.JPG",
     ],
   },
   {
@@ -483,7 +483,7 @@ export const tsebData: FamilyList[] = [
     imgRef: [
      "/fromme/05aob.jpg",
     "/fromme/05first.JPG",
-    "/fromme/06total.PNG",
+    "/fromme/06total.png",
        ],
   },
 ];
@@ -514,6 +514,15 @@ export const daddySpecial: SpecialList[] = [
       "/fordad/05_ย่าปรญ.JPG",
     ],
   },
+  {
+    id: 4,
+    title: "My family drawing",
+    date: "From Best, July 2024",
+    for: "daddy",
+    description: "หนูรัก คุณพ่อ คุณแม่ พี่ธาม มากๆเลยนะคะ",
+    imageString: "/fromme/myfamdraw.jpg",
+    folderRef: "/dadfile.png"
+  },
 ];
 
 export const mommySpecial: SpecialList[] = [
@@ -541,6 +550,15 @@ export const mommySpecial: SpecialList[] = [
       { label: "ลิ้งค์2 ", reflink: "https://drive.google.com/file/d/11gyx-cgns5QUQrrdeDusTvuOEmXPc5Bo/view?usp=sharing" }
     ]
   },
+  {
+    id: 4,
+    title: "My family drawing",
+    date: "From Best, July 2024",
+    for: "mommy",
+    description: "หนูรัก คุณพ่อ คุณแม่ พี่ธาม มากๆเลยนะคะ",
+    imageString: "/fromme/myfamdraw.jpg",
+    folderRef: "/momfile.png",
+  },
 ];
 
 export const timerSpecial: SpecialList[] = [
@@ -552,5 +570,13 @@ export const timerSpecial: SpecialList[] = [
     imageString: "/timeravatar.jpg",
      folderRef: "/timerfile.png"
   },
-  // ...more items
+  {
+    id: 4,
+    title: "My family drawing",
+    date: "From Best, July 2024",
+    for: "timer",
+    description: "หนูรัก คุณพ่อ คุณแม่ พี่ธาม มากๆเลยนะคะ",
+    imageString: "/fromme/myfamdraw.jpg",
+    folderRef: "/timerfile.png"
+  },
 ];
