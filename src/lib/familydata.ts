@@ -689,7 +689,7 @@ export const daddyData: FamilyList[] = [
     id: 2,
     title: "ความในใจของดญ.ณัฐรดา? ป.3/5 ",
     for: "daddy",
-    description:"",
+    description:"เด็กหญิงณัฐรดาคิดถึงพ่อเก่งมากค่ะ อยากให้กลับบ้านไวๆ",
     imageString: "/fordad/08inner.jpg",
   },
   {
@@ -703,7 +703,7 @@ export const daddyData: FamilyList[] = [
     id: 4,
     title: "Dad (Bird) Day",
     for: "daddy",
-    description:"",
+    description:"เป็น เบิร์ดนกไปแล้ว",
     imageString: "/fordad/11dadbd.jpg",
   },
   {
@@ -723,7 +723,7 @@ export const daddyData: FamilyList[] = [
     title: "Best's graduation day",
     date: "3 Oct 2024",
     for: "daddy",
-    description:"",
+    description:"ขอบคุณที่ไปส่งเป็นกำลังใจให้ในวันสำคัญของหนูนะคะ ดีใจมากที่พ่อเดินไปด้วยเพราะตื่นเต้นมากเลยค่ะ เป็นคณะแรกต้องไปแต่เช้าเลยด้วย",
     imageString: "/fordad/14grad.JPG",
     imgRef: [
       "/fordad/14grad.JPG",
@@ -750,14 +750,14 @@ export const daddyData: FamilyList[] = [
     title: "ส่งพ่อบิน",
     date:"7 July 2024",
     for: "daddy",
-    description:"",
+    description:"มีคนมาส่งข้าวถึงที่ทำงานเลย",
     imageString: "/fordad/21aot.JPG",
   },
   {
     id: 9,
     title: "walking together",
     for: "daddy",
-    description:"",
+    description:"อยู่เดินด้วยกันแบบนี้เรื่อยๆเลยนะคะ เป็นช่วงเวลาที่สงบอากาศดีมากที่ได้เดินเที่ยวเล่นกับพ่อ",
     imageString: "/fordad/22walk.JPG",
     imgRef: [
      "/fordad/22walk.JPG",
@@ -772,8 +772,7 @@ export const mommyData: FamilyList[] = [
     id: 0,
     title: "การ์ดจากดญ.ณัฐรดา ป.2/2",
     for: "mommy",
-    description:"",
-    // description: "แกะศิลาจารึก: \"แม่รัตน์คะ ลูกขอสัญญาว่าต่อไปนี้ลูกจะตื่นแต่เช้าทุกวันค่ะ เพื่อให้แม่ไม่ต้องตื่นแต่เช้ามาปลุกค่ะ ลูกเบซซ์ ป.๒/๒\" \n\n ต้องบอกเด็กคนนั้นแล้วแหละค่ะว่าทุกวันนี้ให้แม่ปวดหัวเพราะไม่ยอมแทนไม่ยอมตื่น ขอบคุณที่คอยปลุกและเป็นห่วงหนูตั้งแต่ตอนนั้นจนถึงตอนนี้นะคะ",
+    description: "แกะศิลาจารึก: \"แม่รัตน์คะ ลูกขอสัญญาว่าต่อไปนี้ลูกจะตื่นแต่เช้าทุกวันค่ะ เพื่อให้แม่ไม่ต้องตื่นแต่เช้ามาปลุกค่ะ ลูกเบซซ์ ป.๒/๒\" \n\n ต้องบอกเด็กคนนั้นแล้วแหละค่ะว่าทุกวันนี้ให้แม่ปวดหัวเพราะไม่ยอมแทนไม่ยอมตื่น ขอบคุณที่คอยปลุกและเป็นห่วงหนูตั้งแต่ตอนนั้นจนถึงตอนนี้นะคะ",
     imageString: "/formom/01promise.jpg",
   },
   { id: 1,
@@ -816,9 +815,9 @@ export const mommyData: FamilyList[] = [
         },
         {
           id: 5,
-          title: "วันรับชุดครุยเบซซ์",
+          title: "วันตัดชุดครุยเบซซ์",
           for: "mommy",
-          description: "",
+          description: "ขอบคุณที่ไปช่วยดูเลือกตั้งแต่เสื้อชุดยันรองเท้าเลยนะคะ",
           imageString: "/formom/10grad.JPG",
           imgRef: [
             "/formom/10grad.JPG",
@@ -852,7 +851,7 @@ export const mommyData: FamilyList[] = [
           id: 8,
           title: "ทำงานวันแรก AOT",
           for: "mommy",
-          description: "",
+          description: "ตื่นเต้นมาก ขอโทษที่ตอนนั้นพูดไม่ออกไม่ยอมคุยนะคะ แต่จริงๆรู้สึกดีมากที่แม่ไปส่งด้วยทำงานวันแรกเป็นสังคมใหม่ที่น่ากลัวสำหรับหนูมาก พอมีแม่อยู่ก็โล่งใจขึ้นเลยค่ะ",
           imageString: "/formom/15work.JPG",
           imgRef: [
             "/formom/15work.JPG",
@@ -865,14 +864,14 @@ export const mommyData: FamilyList[] = [
           id: 9,
           title: "Video Call from SG",
           for: "mommy",
-          description: "",
+          description: "แม่คอยห่วงโทรมาตั้งแต่หอที่สิงเลย ขอบคุณที่คอยเป็นห่วงแอบเอาขนมใส่กระเป๋าให้หนูเซอร์ไพรซ์ก่อนมานะคะ",
           imageString: "/formom/19sg.JPG",
         },
         {
           id: 10,
           title: "อาหารฝีมือแม่",
           for: "mommy",
-          description: "",
+          description: "อร่อยมากทุกจาน แทบเลียจาน มีแรงทำงานเลยค่ะ",
           imageString: "/formom/21food.JPG",
           imgRef: [
            "/formom/21food.JPG",
@@ -883,16 +882,14 @@ export const mommyData: FamilyList[] = [
           id: 11,
           title: "ส่งแม่ขึ้นเครื่อง",
           for: "mommy",
-          description: "",
-          // description: "กลับมาสุวรรณภูมิดพื่อไปสุวรรณภูมิใหม่",
+          description: "กลับมาจากทำงานเพื่อไปสุวรรณภูมิใหม่เพื่อไปส่งพ่อกับแม่อีกรอบนะคะ 555",
           imageString: "/formom/23airport.JPG",
         },
         {
           id: 12,
           title: "R&B osaka Duo trip",
           for: "mommy",
-          description: " จริงๆก็อยู่คนเดียวได้ เที่ยวคนเดียวได้ กินข้าวคนเดียวได้ แต่แพงจังมากับแม่ดีกว่า(หยอกๆนะคะ) \n\nขอบคุณแม่ที่พาไปเที่ยวที่ญี่ปุ่นนะคะ \n\n{{video:https://drive.google.com/file/d/1IBsnbydptg7dC08S0lkVM1IeAzICpO88/preview}}\n\n",
-          //ขอโทษที่เป็นไกด์ที่ไาเหนื่อยไปหน่อยนะคะ
+          description: " จริงๆก็อยู่คนเดียวได้ เที่ยวคนเดียวได้ กินข้าวคนเดียวได้ แต่แพงจังมากับแม่ดีกว่า(หยอกๆนะคะ) \n\nขอโทษที่เป็นไกด์ที่พาเหนื่อยไปหน่อยนะคะ \n\n{{video:https://drive.google.com/file/d/1IBsnbydptg7dC08S0lkVM1IeAzICpO88/preview}}\n\n",
           imageString: "/formom/24solotrip.JPG",
           imgRef: [
            "/formom/24solotrip.JPG",
@@ -1103,7 +1100,7 @@ export const daddySpecial: SpecialList[] = [
     id: 1,
     title: "รับปริญญากับคุณย่า",
     for: "daddy",
-    description: "",
+    description: "เอาปริญญามาฝากคุณย่าแล้วนะคะ ได้ทำตามสัญญาแล้วนะคะ ทั้ง2อย่างเลยเรื่องทั้งเรื่องรับปริญญาและเงินเดือน ขอให้คุณย่ามีความสุขมีสุขภาพแข็งแรงค่ะ",
     imageString: "/fordad/00_ย่าปรญ.JPG",
     folderRef: "/dadfile.png",
     imgRef: [
