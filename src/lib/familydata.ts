@@ -547,7 +547,7 @@ export const mommySpecial: SpecialList[] = [
     folderRef: "/momfile.png",
     link: [
       { label: "ลิงก์1 (ก่อนตัดต่อ)", reflink: "https://drive.google.com/file/d/1DIgttXBKG-Jhun5Dkf6bAiSCNK_uFoWP/view?usp=sharing" },
-      { label: "ลิ้งค์2 ", reflink: "https://drive.google.com/file/d/11gyx-cgns5QUQrrdeDusTvuOEmXPc5Bo/view?usp=sharing" }
+      { label: "ลิงก์2 ", reflink: "https://drive.google.com/file/d/11gyx-cgns5QUQrrdeDusTvuOEmXPc5Bo/view?usp=sharing" }
     ]
   },
   {

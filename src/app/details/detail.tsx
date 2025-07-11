@@ -121,7 +121,7 @@ export default function Details() {
                       <CarouselItem key={index}>
                         <div className="p-1">
                           <Card className="bg-transparent shadow-none border-none">
-                            <CardContent className="flex aspect-square  items-center justify-center p-1 overflow-hidden">
+                            <CardContent className="flex aspect-square  items-center justify-center p-1">
                               <Image
                                 src={item}
                                 alt=""
