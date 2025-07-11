@@ -28,6 +28,9 @@ export default function GinKhao() {
         <div className="lg:my-20 md:my-15 sm:my-4">
           <SpinCircle dataName="mamaOrderData" />
         </div>
+
+        <h1 className="text-xl font-semibold">♥️ Dad&apos;s Pick!</h1>
+        <SpinCircle dataName="dadPickData" />
       </div>
     </div>
   );

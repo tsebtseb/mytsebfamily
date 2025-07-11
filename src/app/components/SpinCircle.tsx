@@ -61,10 +61,21 @@ const mamaOrderData = [
   { value: 80, color: "black", label: "🍗บอนชอน" },
 ];
 
+const dadPickData=[
+  { value: 30, color: "#333333", label: "🍛EASY! buddy" },
+  { value: 90, color: "#D7263D", label: "🐮Rengaya" },
+  { value: 70, color: "#EF476F", label: "🍜Khao-Sō-i" },
+  { value: 70, color: "#90BE6D", label: "🍜ThongSmith" },
+  { value: 50, color: "#264653", label: "🍜ก๋วยเตี๋ยวเนื้อ" },
+  { value: 60, color: "#720026", label: "🥩พาข้าวเหนียว" },
+  { value: 80, color: "#43AA8B", label: "🍜รสดีเด็ด" },
+  { value: 60, color: "#FF6F59", label: "🍜ก๋วยเตี๋ยวต้มยำ" },
+];
+
 export default function SpinCircle({
   dataName,
 }: {
-  dataName: "foodTypeData" | "restaurantData" | "mamaOrderData";
+  dataName: "foodTypeData" | "restaurantData" | "mamaOrderData" | "dadPickData";
 }) {
   const [spinning, setSpinning] = useState<boolean>(false);
   const [winnerIndex, setWinnerIndex] = useState<number | null>(null);
@@ -75,6 +86,7 @@ export default function SpinCircle({
     foodTypeData,
     restaurantData,
     mamaOrderData,
+    dadPickData,
   };
 
   const datasetValues = allDatasets[dataName] ?? foodTypeData;
