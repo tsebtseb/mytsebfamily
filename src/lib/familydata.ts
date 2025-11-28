@@ -46,13 +46,14 @@ export const familyData: FamilyList[] = [
             { label: "21/9/2024 รูปวันซ้อม", reflink: "https://photos.app.goo.gl/ZgnAvJ33DxYa1Mn77" },
             { label: "รูปกล้องเจเจ้", reflink: "https://drive.google.com/drive/folders/1KSCrbuPQHc1JCi9JaTfZqrCKuZ14JLWk?usp=share_link" },
             { label: "My storage", reflink: "https://drive.google.com/drive/folders/1aUVJpxJ124uAOzIpGLgORI37ELJ8g4vs?usp=sharing" },
+            { label: "Full link youtube video(from Chula)", reflink: "https://www.youtube.com/live/JDlacSvFuIY?si=r1xwo82aQc1RBJya" },
           ]
     },
     {
       id: 1,
       title: "งานบวชหลวงพี่ภาสวิชฺโช",
       for: "timer",
-      date:"6 July 2024",
+      date:"6 July 2025",
       description:"",
       imageString: "/family/05_งานบวชหลวงพี่.JPG",
       imgRef: [
@@ -65,6 +66,21 @@ export const familyData: FamilyList[] = [
           { label: "งานบวช_06072025", reflink: "https://photos.app.goo.gl/86uVobf9ZkV4rjae9" },
           { label: "My storage", reflink: "https://drive.google.com/drive/folders/1ObUUufc2MGRsbKsrRAYSlLZfDv0YgnmL?usp=sharing" },
         ]
+  },
+  {
+    id: 999,
+    title: "หลวงพี่ภาสวิชฺโช",
+    for: "timer",
+    date:"27 Oct 2025",
+    description:"",
+    imageString: "/family/timer/resizeหลวงพี่-fotor-20251128144850.jpg",
+    imgRef: [
+      "/family/timer/15วัดบวร.jpg",
+      ],
+      link: [
+        { label: "วัดบวรนิเวศน์", reflink: "https://drive.google.com/drive/mobile/folders/17dYe0N-HyZDDV7SFjHcMP5Qzj9GGJW4w?usp=sharing" },
+        { label: "รูปภาพ พระนวกะ", reflink: "https://drive.usercontent.google.com/download?id=1tel861-1VRwFeimZcisIj7wz724w0qu9&export=download" },
+      ]
   },
   {
     id: 2,
@@ -105,6 +121,17 @@ export const familyData: FamilyList[] = [
    "/family/17Countdown2011_01.JPG",
    "/family/18Countdown2011_03.JPG",
     ],
+},
+{
+  id: 10082025,
+  title: "ทำบุญออนเซ็น 2025",
+  date: "10 Aug 2025",
+  for: "family",
+  description:"opening diora onsen with หลวงพี่ภาสวิชโช",
+  imageString: "/family/51onsen.JPG",
+  link: [
+      { label: "รวมภาพ 2025-8-10 ทำบุญออนเซ็น", reflink: "https://drive.google.com/drive/folders/1PgjTGhzguA51hCBN2UZs1hLaPARbXVFK?usp=drive_link" },
+  ]
 },
 {
   id: 6,
@@ -924,6 +951,19 @@ export const timerData: FamilyList[] = [
       "/former/03back.JPG",
       "/former/04back.JPG",
     ],
+  },
+  {
+    id: 12,
+    title: "หลวงพี่ภาสวิชฺโช",
+    for: "timer",
+    description: "",
+    imageString: "/former/พระนวกะ-fotor-20251128145722.jpg",
+    imgRef: [
+      "/former/พระนวกะ.jpg",
+    ],
+    link: [
+      { label: "พระนวกะ (พัดยศ เปรียญ9-ห้ามเผยแพร่)", reflink: "https://drive.usercontent.google.com/download?id=1oyqM7G8dEbuyKNOgnonfcljtDzRHV6eV&export=download" },
+    ]
   },
   {
     id: 2,
