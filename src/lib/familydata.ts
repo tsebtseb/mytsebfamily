@@ -76,6 +76,7 @@ export const familyData: FamilyList[] = [
     imageString: "/family/timer/resizeหลวงพี่-fotor-20251128144850.jpg",
     imgRef: [
       "/family/timer/15วัดบวร.jpg",
+      "/family/timer/quoteหลวงพี่.jpg",
       ],
       link: [
         { label: "วัดบวรนิเวศน์", reflink: "https://drive.google.com/drive/mobile/folders/17dYe0N-HyZDDV7SFjHcMP5Qzj9GGJW4w?usp=sharing" },
