@@ -142,12 +142,12 @@ export default function Home() {
             ×
           </button>
 
-          {/* Image */}
           <div className="flex h-full w-full items-center justify-center p-4">
             <Image
               src={FamilyPic}
               alt="Full Image"
               className="max-h-[90vh] w-auto object-contain rounded-xl"
+              onClick={(e) => e.stopPropagation()}
             />
           </div>
         </div>
